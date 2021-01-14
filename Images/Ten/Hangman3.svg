@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 0;
+      }
+    </style>
+  </defs>
+  <rect id="Base" class="cls-1" x="100" y="900" width="800" height="22"/>
+  <rect id="Stand" class="cls-1" x="225" y="100" width="22" height="800"/>
+  <rect id="Top" class="cls-1" x="154" y="100" width="378" height="22"/>
+</svg>

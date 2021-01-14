@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-1 {
+        stroke-width: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 12.5px;
+      }
+    </style>
+  </defs>
+  <rect id="Base" class="cls-1" x="100" y="900" width="800" height="22"/>
+  <rect id="Stand" class="cls-1" x="225" y="100" width="22" height="800"/>
+  <rect id="Top" class="cls-1" x="154" y="100" width="378" height="22"/>
+  <rect id="Hang" class="cls-1" x="478" y="122" width="22" height="84"/>
+  <g id="Head">
+    <circle class="cls-2" cx="489" cy="285" r="81"/>
+    <circle class="cls-1" cx="449.5" cy="263.5" r="19.5"/>
+    <circle id="Ellipse_2_copy" data-name="Ellipse 2 copy" class="cls-1" cx="527.5" cy="263.5" r="19.5"/>
+    <rect class="cls-1" x="443" y="304" width="91" height="11"/>
+  </g>
+</svg>

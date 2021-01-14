@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 12.5px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-2 {
+        stroke-width: 2.458px;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Base" x="100" y="900" width="800" height="22"/>
+  <rect id="Stand" x="225" y="100" width="22" height="800"/>
+  <rect id="Top" x="154" y="100" width="378" height="22"/>
+  <rect id="Hang" x="478" y="122" width="22" height="84"/>
+  <g id="Head">
+    <circle class="cls-1" cx="489" cy="285" r="81"/>
+    <circle cx="449.5" cy="263.5" r="19.5"/>
+    <circle id="Ellipse_2_copy" data-name="Ellipse 2 copy" cx="527.5" cy="263.5" r="19.5"/>
+    <rect x="443" y="304" width="91" height="11"/>
+  </g>
+  <rect id="Body" class="cls-2" x="473" y="363" width="35" height="250"/>
+  <g id="Leg_1" data-name="Leg 1">
+    <path id="Top_copy" data-name="Top copy" class="cls-3" d="M387.471,717.912L477,591.653l17.946,12.725L405.417,730.637Z"/>
+    <path id="Top_copy_3" data-name="Top copy 3" class="cls-3" d="M411.949,711.506l2.859,154.552-21.936.31-2.858-154.551Z"/>
+  </g>
+  <g id="Leg_2" data-name="Leg 2">
+    <path id="Top_copy_4" data-name="Top copy 4" class="cls-3" d="M591.949,709.506l2.859,154.551-21.936.311-2.858-154.551Z"/>
+    <path id="Top_copy_2" data-name="Top copy 2" class="cls-3" d="M594,718.284L504.859,592l-17.868,12.729L576.13,731.012Z"/>
+  </g>
+  <g id="Hand_1" data-name="Hand 1">
+    <path id="Top_copy_4-2" data-name="Top copy 4" class="cls-3" d="M598.759,480.334l13.622,98.915-19.127-7.36-13.622-98.915Z"/>
+    <path id="Top_copy_2-2" data-name="Top copy 2" class="cls-3" d="M596.007,481.042L505.338,404.1l-7.329,19.074,90.669,76.944Z"/>
+  </g>
+  <g id="Hand_2" data-name="Hand 2">
+    <path id="Top_copy_4-3" data-name="Top copy 4" class="cls-3" d="M386.129,481.921l-13.621,98.915,19.127-7.359,13.622-98.916Z"/>
+    <path id="Top_copy_2-3" data-name="Top copy 2" class="cls-3" d="M388.882,482.63l90.668-76.945,7.33,19.074L396.211,501.7Z"/>
+  </g>
+</svg>
