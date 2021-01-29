@@ -1,5 +1,6 @@
 Tests/
 resource.qrc
-welcome/__pycache__
 wordlist.py
 wordlist.json
+welcome/__pycache__
+Category/__pycache__
