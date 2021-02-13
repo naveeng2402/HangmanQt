@@ -6,14 +6,20 @@ from welcome.welcome import Welcome
 from welcome.info import Info
 from Category.category import Category
 
+def summa(): pass
 
 def welcome_screen():
     welcome_scr = Welcome()
     widget.addWidget(welcome_scr)
     widget.setCurrentWidget(welcome_scr)
+
+    welcome_scr.StartGame.setShortcut('Return')
+    welcome_scr.Info.setShortcut('F1')
+    welcome_scr.StartGame.clicked.connect(lambda:category_screen())
+    welcome_scr.Info.clicked.connect(lambda:info_screen())
     
-    welcome_scr.StartGame.clicked.connect(category_screen)
-    welcome_scr.Info.clicked.connect(info_screen)
+    welcome_scr.esc = QtWidgets.QShortcut('Esc', welcome_scr)
+    welcome_scr.esc.activated.connect(summa)
     
 def info_screen():
     info_scr = Info()
@@ -27,6 +33,9 @@ def info_screen():
     info_scr.buttonBox.accepted.connect(welcome_screen)
     info_scr.buttonBox.rejected.connect(welcome_screen)    
     QtCore.QMetaObject.connectSlotsByName(info_scr.Dialog)
+    
+    info_scr.esc = QtWidgets.QShortcut('Esc', info_scr.Dialog)
+    info_scr.esc.activated.connect(welcome_screen)
     
     
 def category_screen():
@@ -69,6 +78,9 @@ def category_screen():
     widget.removeWidget(this)
     
     category_scr.StartButton.clicked.connect(click)
+    
+    category_scr.esc = QtWidgets.QShortcut('Esc', category_scr)
+    category_scr.esc.activated.connect(welcome_screen)
     
     
 def game_screen(word,hint):

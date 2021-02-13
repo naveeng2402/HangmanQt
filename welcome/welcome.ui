@@ -97,6 +97,9 @@ border-image: url(:/General/Images/Hangman.gif);</string>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton::!pressed
 {
@@ -121,6 +124,9 @@ QPushButton::pressed
              <width>45</width>
              <height>45</height>
             </size>
+           </property>
+           <property name="shortcut">
+            <string>F1</string>
            </property>
           </widget>
          </item>
@@ -166,6 +172,9 @@ QPushButton::pressed
              <bold>true</bold>
             </font>
            </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
            <property name="styleSheet">
             <string notr="true">QPushButton::!pressed
 {
@@ -184,6 +193,9 @@ QPushButton::pressed
            </property>
            <property name="text">
             <string>Start Game</string>
+           </property>
+           <property name="shortcut">
+            <string>Return</string>
            </property>
           </widget>
          </item>
