@@ -5,6 +5,7 @@ from PyQt5 import QtCore, QtWidgets, QtGui
 from welcome.welcome import Welcome
 from welcome.info import Info
 from Category.category import Category
+from Game.game_UI import Game
 
 def summa(): pass
 
@@ -67,7 +68,7 @@ def category_screen():
             # print(word)
             # print(hint)
         
-        if move is True: game_screen(word, hint)
+        if move is True: game_screen(word, hint,key)
     
     category_scr = Category()
     
@@ -83,9 +84,17 @@ def category_screen():
     category_scr.esc.activated.connect(welcome_screen)
     
     
-def game_screen(word,hint):
+def game_screen(word,hint,topic):
     print(word,hint)
-
+    game_scr = Game(word,hint,topic)
+    this = widget.currentWidget()
+    
+    widget.addWidget(game_scr.Dialog)
+    widget.setCurrentWidget(game_scr.Dialog)
+    widget.removeWidget(this)
+    
+    game_scr.esc = QtWidgets.QShortcut('Esc', game_scr.Dialog)
+    game_scr.esc.activated.connect(category_screen)
 
 if __name__ == "__main__":
 
